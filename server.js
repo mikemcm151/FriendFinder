@@ -5,8 +5,8 @@ var PORT = process.env.PORT || 5000;
 var app = express();
 
 app.get("/", function(req, res){
-	app.use(express.static(__dirname + '/survey'));
-	app.listen(5000)
+	// app.use(express.static(__dirname + '/survey'));
+	// app.listen(5000)
 	res.sendFile(path.join(__dirname, "/app/public/home.html"));
 });
 
